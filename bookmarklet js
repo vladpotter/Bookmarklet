@@ -48,6 +48,18 @@
                         alert('I lied')
                         alert('Ok, goodbye')
                     }
+
+                    if(event.key === "4"){
+                        const textbox = prompt("Do you like my bookmarklet?")
+                        if(textbox == "yes" || "Yes" || "YES" || "yEs" || "YEs" || "YeS" || "yeS"){
+                            alert("Yay, thank you")
+                        }
+                        if(textbox == "no" || "NO" || "No" || "nO"){
+                            alert(":(")
+                        }
+                        if(textbox !== "yes" || "Yes" || "YES" || "yEs" || "YEs" || "YeS" || "yeS" || "no" || "NO" || "No" || "nO")
+                            alert("ok")
+                    }
     });
 }
                 
