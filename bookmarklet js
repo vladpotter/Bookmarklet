@@ -4,29 +4,29 @@
                 var randNum = Math.random();
                 
                 if(menu === 0){
-                alert("Press 1 for a suprise or 2 for a random number generator, once you have clicked out of this message.")
+                alert("Press 1 for a suprise or 2 for a random number generator, once you have clicked out of this message.");
                 document.addEventListener("keydown",(event) => {
-                    //lucky
+                    
                     if(event.key === "1"){
                         if(fun >= 0.5 && fun <= 0.79){
                     alert('You Win!');
                     document.body.style.backgroundColor = 'green';
-                    fun = Math.random();
+                    
                 }
                 if(fun <= 0.49){
-                    alert("You Lose")
+                    alert("You Lose");
                     document.body.style.backgroundColor = 'red';
-                    fun = Math.random();
+                    
                 }
                 if(fun >=0.8){
-                    alert('Jackpot! You can now edit text on this website!')
-                    document.body.contentEditable='true';
-                    fun = Math.random();
+                    alert('Jackpot! You can now edit text on this website!');
+                    document.body.contentEditable = 'true';
+                    
                 }
                     }
-                    //random number generator
+                    
                     if(event.key === "2"){
-                        alert(randNum)
+                        alert(randNum);
                         randNum = Math.random();
                     }
     });
