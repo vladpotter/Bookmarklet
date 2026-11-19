@@ -9,12 +9,12 @@
                     
                     if(event.key === "1"){
                         if(fun >= 0.5 && fun <= 0.79){
-                    alert('You Win!');
+                    alert('You Win! Reload the page to play again!');
                     document.body.style.backgroundColor = 'green';
                     
                 }
                 if(fun <= 0.49){
-                    alert("You Lose");
+                    alert("You Lose, reload the page to play again!");
                     document.body.style.backgroundColor = 'red';
                     
                 }
