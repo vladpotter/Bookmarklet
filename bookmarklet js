@@ -2,7 +2,7 @@
                 var menu = 0;
                 
                 document.addEventListener("keydown",(thing)
-            
+                    if("keydown" === "keyA")
             )
                 if(menu == 1){
                 var fun = Math.random();
