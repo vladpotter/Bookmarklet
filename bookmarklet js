@@ -4,7 +4,7 @@
                 var randNum = Math.random();
                 
                 if(menu === 0){
-                alert("Press 1 for a suprise or 2 for a random number generator, once you have clicked out of this message.");
+                alert("Press 1 for a suprise, 2 for a random number generator and 3 for greetings, once you have clicked out of this message.");
                 document.addEventListener("keydown",(event) => {
                     
                     if(event.key === "1"){
@@ -28,6 +28,25 @@
                     if(event.key === "2"){
                         alert(randNum);
                         randNum = Math.random();
+                    }
+
+                    if(event.key === "3"){
+                        alert('Hi')
+                        alert('Hello')
+                        alert('Greetings')
+                        alert('你好')
+                        alert('Howdy Partner!')
+                        alert('Good morning?')
+                        alert('Good afternoon?')
+                        alert('Good Evening?')
+                        alert('Good night?')
+                        alert('How are you?')
+                        alert('Oh Im sorry to hear that')
+                        alert('再见')
+                        alert('Goodbye')
+                        alert('This is the last one I swear')
+                        alert('I lied')
+                        alert('Ok, goodbye')
                     }
     });
 }
