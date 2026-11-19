@@ -1,0 +1,24 @@
+    javascript:(function() {
+                var menu = 0;
+                
+                document.addEventListener("keydown",(thing)
+            
+            )
+                if(menu == 1){
+                var fun = Math.random();
+                if(fun >= 0.5 && fun <= 0.79){
+                    alert('Winner');
+                    document.body.style.backgroundColor = 'green';
+                }
+                if(fun <= 0.49){
+                    alert("You Lose")
+                    document.body.style.backgroundColor = 'red';
+                }
+                if(fun >=0.8){
+                    alert('Jackpot! You can now edit text on this website!')
+                    document.body.contentEditable='true';
+                    document.body.style.backgroundColor = Math.random();
+                }
+            }
+                })();
+              
