@@ -1,16 +1,12 @@
     javascript:(function() {
                 var menu = 0;
-                if(menu === 0){
-                alert("Press 1 to play, if you dare...")
-                document.addEventListener("keydown",(event) => {
-                    if(event.key === "1"){
-                        menu == 1;
-                    }
-    });
-}
-                if(menu == 1){
                 var fun = Math.random();
-                if(fun >= 0.5 && fun <= 0.79){
+                if(menu === 0){
+                alert("Press 1 or 2 to play, once you have clicked out of this message.")
+                document.addEventListener("keydown",(event) => {
+                    //lucky
+                    if(event.key === "1"){
+                        if(fun >= 0.5 && fun <= 0.79){
                     alert('Winner');
                     document.body.style.backgroundColor = 'green';
                 }
@@ -23,6 +19,15 @@
                     document.body.contentEditable='true';
                     document.body.style.backgroundColor = Math.random();
                 }
-            }
+                    }
+                    if(event.key === "2"){
+                        alert("Random Number Generator")
+                        alert(fun)
+                    }
+    });
+}
+                
+                
+            
                 })();
               
