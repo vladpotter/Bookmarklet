@@ -1,9 +1,11 @@
     javascript:(function() {
                 var menu = 0;
                 
-                document.addEventListener("keydown",(thing)
-                    if("keydown" === "keyA")
-            )
+                document.addEventListener("keydown",(thing) => {
+                    if(thing.key === "5"){
+                        menu = 1;
+                    }
+    });
                 if(menu == 1){
                 var fun = Math.random();
                 if(fun >= 0.5 && fun <= 0.79){
