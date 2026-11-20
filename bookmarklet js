@@ -1,10 +1,10 @@
-    javascript:(function() {
+javascript:(function() {
                 var menu = 0;
                 var fun = Math.random();
                 var randNum = Math.random();
                 
                 if(menu === 0){
-                alert("Press 1 for a suprise, 2 for a random number generator, 3 for greetings, and 4 for feedback, once you have clicked out of this message.");
+                alert("Press 1 for a surprise, 2 for a random number generator, 3 for greetings, and 4 for feedback, once you have clicked out of this message.");
                 document.addEventListener("keydown",(event) => {
                     
                     if(event.key === "1"){
@@ -67,5 +67,5 @@
                 
                  
             
-                })();
-              
+})();
+         
