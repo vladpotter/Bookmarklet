@@ -30,7 +30,7 @@
                         randNum = Math.random();
                     }
 
-                    if(event.key === "3"){
+                    else if(event.key === "3"){
                         alert('Hi');
                         alert('Hello');
                         alert('Greetings');
@@ -51,7 +51,7 @@
                     }
 
                     if(event.key === "4"){
-                        const textbox = prompt("Do you like my bookmarklet?")
+                        const textbox = prompt("Do you like my bookmarklet?");
                         if(textbox == "yes" || textbox == "Yes" || textbox == "YES" || textbox == "yEs" || textbox == "YEs" || textbox == "YeS" || textbox == "yeS"){
                             alert("Yay, thank you");
                         }
@@ -65,7 +65,7 @@
     });
 }
                 
-                
+                 
             
                 })();
               
