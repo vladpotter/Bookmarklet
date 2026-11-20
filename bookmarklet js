@@ -4,7 +4,7 @@
                 var randNum = Math.random();
                 
                 if(menu === 0){
-                alert("Press 1 for a suprise, 2 for a random number generator and 3 for greetings, once you have clicked out of this message.");
+                alert("Press 1 for a suprise, 2 for a random number generator, 3 for greetings, and 4 for feedback, once you have clicked out of this message.");
                 document.addEventListener("keydown",(event) => {
                     
                     if(event.key === "1"){
@@ -13,52 +13,54 @@
                     document.body.style.backgroundColor = 'green';
                     
                 }
-                if(fun <= 0.49){
+                else if(fun <= 0.49){
                     alert("You Lose, reload the page to play again!");
                     document.body.style.backgroundColor = 'red';
                     
                 }
-                if(fun >=0.8){
+                else if(fun >=0.8){
                     alert('Jackpot! You can now edit text on this website!');
                     document.body.contentEditable = 'true';
                     
                 }
                     }
                     
-                    if(event.key === "2"){
+                    else if(event.key === "2"){
                         alert(randNum);
                         randNum = Math.random();
                     }
 
                     if(event.key === "3"){
-                        alert('Hi')
-                        alert('Hello')
-                        alert('Greetings')
-                        alert('你好')
-                        alert('Howdy Partner!')
-                        alert('Good morning?')
-                        alert('Good afternoon?')
-                        alert('Good Evening?')
-                        alert('Good night?')
-                        alert('How are you?')
-                        alert('Oh Im sorry to hear that')
-                        alert('再见')
-                        alert('Goodbye')
-                        alert('This is the last one I swear')
-                        alert('I lied')
-                        alert('Ok, goodbye')
+                        alert('Hi');
+                        alert('Hello');
+                        alert('Greetings');
+                        alert('你好');
+                        alert('Howdy Partner!');
+                        alert('Good morning?');
+                        alert('Good afternoon?');
+                        alert('Good Evening?');
+                        alert('Good night?');
+                        alert('How are you?');
+                        alert('Oh Im sorry to hear that');
+                        alert('再见');
+                        alert('Goodbye');
+                        alert('This is the last one I swear');
+                        alert('I lied');
+                        alert('Ok, goodbye');
+                        
                     }
 
                     if(event.key === "4"){
                         const textbox = prompt("Do you like my bookmarklet?")
-                        if(textbox == "yes" || "Yes" || "YES" || "yEs" || "YEs" || "YeS" || "yeS"){
-                            alert("Yay, thank you")
+                        if(textbox == "yes" || textbox == "Yes" || textbox == "YES" || textbox == "yEs" || textbox == "YEs" || textbox == "YeS" || textbox == "yeS"){
+                            alert("Yay, thank you");
                         }
-                        if(textbox == "no" || "NO" || "No" || "nO"){
-                            alert(":(")
+                        else if(textbox == "no" || textbox == "NO" || textbox == "No" || textbox == "nO"){
+                            alert(":(");
                         }
-                        if(textbox !== "yes" || "Yes" || "YES" || "yEs" || "YEs" || "YeS" || "yeS" || "no" || "NO" || "No" || "nO")
-                            alert("ok")
+                        else{alert("ok");}
+                            
+                        
                     }
     });
 }
