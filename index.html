@@ -1,82 +1,82 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title> hi</title>
-<head>
+    <title>My Bookmarklet</title>
+</head>
 <body>
-	<p>Drag this into your bookmark bar:</p>
 
-	<a href=“drag me”> javascript:(function() {
-                var menu = 0;
-                var fun = Math.random();
-                var randNum = Math.random();
-                
-                if(menu === 0){
-                alert("Press 1 for a surprise, 2 for a random number generator, 3 for greetings, and 4 for feedback, once you have clicked out of this message.");
-                document.addEventListener("keydown",(event) => {
-                    
-                    if(event.key === "1"){
-                        if(fun >= 0.5 && fun <= 0.79){
+    <p>Drag this into your bookmark bar:</p>
+
+    <a href="javascript:(function(){
+        var fun;
+        var randNum = Math.random();
+
+        alert('Press 1 for a surprise, 2 for a random number generator, 3 for greetings, and 4 for feedback.');
+
+        function handleKey(event) {
+
+            if(event.key === '1') {
+                fun = Math.random();
+
+                if(fun >= 0.5 && fun <= 0.79) {
                     alert('You Win! Reload the page to play again!');
                     document.body.style.backgroundColor = 'green';
-                    
                 }
-                else if(fun <= 0.49){
-                    alert("You Lose, reload the page to play again!");
+                else if(fun <= 0.49) {
+                    alert('You Lose, reload the page to play again!');
                     document.body.style.backgroundColor = 'red';
-                    
                 }
-                else if(fun >=0.8){
+                else {
                     alert('Jackpot! You can now edit text on this website!');
                     document.body.contentEditable = 'true';
-                    
                 }
-                    }
-                    
-                    else if(event.key === "2"){
-                        alert(randNum);
-                        randNum = Math.random();
-                    }
+            }
 
-                    else if(event.key === "3"){
-                        alert('Hi');
-                        alert('Hello');
-                        alert('Greetings');
-                        alert('你好');
-                        alert('Howdy Partner!');
-                        alert('Good morning?');
-                        alert('Good afternoon?');
-                        alert('Good Evening?');
-                        alert('Good night?');
-                        alert('How are you?');
-                        alert('Oh Im sorry to hear that');
-                        alert('再见');
-                        alert('Goodbye');
-                        alert('This is the last one I swear');
-                        alert('I lied');
-                        alert('Ok, goodbye');
-                        
-                    }
+            else if(event.key === '2') {
+                alert(randNum);
+                randNum = Math.random();
+            }
 
-                    if(event.key === "4"){
-                        const textbox = prompt("Do you like my bookmarklet?");
-                        if(textbox == "yes" || textbox == "Yes" || textbox == "YES" || textbox == "yEs" || textbox == "YEs" || textbox == "YeS" || textbox == "yeS"){
-                            alert("Yay, thank you");
-                        }
-                        else if(textbox == "no" || textbox == "NO" || textbox == "No" || textbox == "nO"){
-                            alert(":(");
-                        }
-                        else{alert("ok");}
-                            
-                        
-                    }
-    });
-}
-                
-                 
-            
-})();
-</a>
+            else if(event.key === '3') {
+                alert('Hi');
+                alert('Hello');
+                alert('Greetings');
+                alert('你好');
+                alert('Howdy Partner!');
+                alert('Good morning?');
+                alert('Good afternoon?');
+                alert('Good Evening?');
+                alert('Good night?');
+                alert('How are you?');
+                alert('Oh Im sorry to hear that');
+                alert('再见');
+                alert('Goodbye');
+                alert('This is the last one I swear');
+                alert('I lied');
+                alert('Ok, goodbye');
+            }
+
+            else if(event.key === '4') {
+                const textbox = prompt('Do you like my bookmarklet?');
+
+                if(textbox && textbox.toLowerCase() === 'yes') {
+                    alert('Yay, thank you');
+                }
+                else if(textbox && textbox.toLowerCase() === 'no') {
+                    alert(':(');
+                }
+                else {
+                    alert('ok');
+                }
+            }
+        }
+
+        document.addEventListener('keydown', handleKey);
+
+    })();">
+        Drag Me!
+    </a>
+
 </body>
-</html> 
-         
+</html>
